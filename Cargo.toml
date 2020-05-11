@@ -4,7 +4,7 @@ description = "tap-windows driver interface."
 authors = ["Davide Mor <tazdevil971@gmail.com>"]
 license = "MIT"
 
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 
 repository = "https://github.com/Tazdevil971/tap-windows"
