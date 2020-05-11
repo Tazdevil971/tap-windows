@@ -7,7 +7,6 @@ license = "MIT"
 version = "0.1.0"
 edition = "2018"
 
-documentation = "https://doc.rs/tap-windows"
 repository = "https://github.com/Tazdevil971/tap-windows"
 keywords = ["tap", "tunnel", "bindings", "network"]
 readme = "README.md"
