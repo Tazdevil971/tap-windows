@@ -6,7 +6,7 @@ Add this to your `[dependencies]` in `Cargo.toml`
 ```toml
 tap-windows = "0.1"
 ```
-Alternatively if you have `cargo-edit` installed you can install it by running `cargo add tap-windows`.
+Alternatively you can install it by running `cargo add tap-windows`.
 
 ## Usage
 Check the documentation for `Device` for a simple usage example.

@@ -1,2 +1,5 @@
+.vscode/
+.VSCodeCounter/
+.env
 /target
 Cargo.lock

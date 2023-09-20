@@ -10,10 +10,7 @@ fn exec_netsh(args: &[&str]) -> io::Result<()> {
             if res.success() {
                 Ok(())
             } else {
-                Err(io::Error::new(
-                    io::ErrorKind::Other,
-                    "Failed to execute netsh",
-                ))
+                Err(io::Error::new(io::ErrorKind::Other, "Failed to execute netsh"))
             }
         })
 }
@@ -22,11 +19,7 @@ pub fn set_interface_name(name: &str, newname: &str) -> io::Result<()> {
     exec_netsh(&["int", "set", "int", "name=", name, "newname=", newname])
 }
 
-pub fn set_interface_ip(
-    name: &str,
-    address: &str,
-    mask: &str,
-) -> io::Result<()> {
+pub fn set_interface_ip(name: &str, address: &str, mask: &str) -> io::Result<()> {
     exec_netsh(&[
         "int",
         "ipv4",
