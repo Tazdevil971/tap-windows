@@ -1,0 +1,23 @@
+name: Rust
+
+on:
+  [push, pull_request]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: rustfmt
+      run: cargo fmt --verbose --all -- --check
+    - name: clippy
+      run: cargo clippy --verbose -- -D warnings
+    - name: Build
+      run: cargo build --verbose --all-features --examples
+    - name: Run tests
+      run: cargo test --verbose --all-features
